@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:        #F7F5F0;
+  --surface:   #FFFFFF;
+  --navy:      #0D1B2A;
+  --navy2:     #1A2E42;
+  --gold:      #C9922A;
+  --gold-light:#F0D9A8;
+  --text:      #1A1A1A;
+  --text2:     #4A5568;
+  --text3:     #94A3B8;
+  --border:    #E8E4DC;
+  --red:       #E53E3E;
+  --green:     #2D6A4F;
+  --radius:    12px;
+  --shadow:    0 4px 24px rgba(13,27,42,0.08);
+  --shadow-lg: 0 12px 40px rgba(13,27,42,0.14);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4 { font-family: 'Fraunces', serif; line-height: 1.2; }
+input, textarea, select, button { font-family: 'Plus Jakarta Sans', sans-serif; }
+button { cursor: pointer; }
+a { text-decoration: none; color: inherit; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
