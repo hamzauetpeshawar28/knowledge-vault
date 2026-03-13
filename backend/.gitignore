@@ -1,3 +1,15 @@
-node_modules/
-.env
-uploads/
+# Backend
+backend/node_modules
+backend/.env
+backend/uploads
+
+# Frontend
+frontend/node_modules
+frontend/frontend/node_modules
+frontend/build
+frontend/frontend/build
+frontend/frontend/.env
+
+# General
+.DS_Store
+*.log
